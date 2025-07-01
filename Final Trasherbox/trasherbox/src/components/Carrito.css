@@ -1,0 +1,119 @@
+.carrito-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.carrito-container h2 {
+  margin-bottom: 1.5rem;
+  color: #e76f1d;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.carrito-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carrito-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.carrito-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.carrito-info {
+  flex: 1;
+}
+
+.carrito-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.carrito-info p {
+  margin: 0.4rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cantidad-control button {
+  background-color: #e76f1d;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cantidad-control button:hover {
+  background-color: #cc5a11;
+}
+
+.cantidad-control .eliminar {
+  background-color: #e02020;
+  margin-left: auto;
+}
+
+.cantidad-control .eliminar:hover {
+  background-color: #c31818;
+}
+
+.carrito-total {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.carrito-total h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.carrito-total button {
+  background-color: #e76f1d;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carrito-total button:hover {
+  background-color: #cc5a11;
+}
+
+.carrito-total .vaciar {
+  background-color: #555;
+}
+
+.carrito-total .vaciar:hover {
+  background-color: #333;
+}

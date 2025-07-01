@@ -2,19 +2,19 @@ import "./ProductCard.css";
 
 function ProductCard({ id, title, description, price, image }) {
   const handleAddToCart = () => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const product = { id, title, price, image, quantity: 1 };
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const product = { id, nombre: title, precio: price, imagen: image, cantidad: 1 };
 
-    const existingProduct = cart.find((item) => item.id === id);
+    const existingProduct = carrito.find((item) => item.id === id);
 
     if (existingProduct) {
-      existingProduct.quantity += 1;
+      existingProduct.cantidad += 1;
     } else {
-      cart.push(product);
+      carrito.push(product);
     }
 
-    localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Producto agregado al carrito");
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert("Producto agregado al carrito 🛒");
   };
 
   return (
@@ -31,4 +31,3 @@ function ProductCard({ id, title, description, price, image }) {
 }
 
 export default ProductCard;
-

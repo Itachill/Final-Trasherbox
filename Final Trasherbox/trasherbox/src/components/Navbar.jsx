@@ -30,7 +30,7 @@ function Navbar() {
       <nav className="nav">
         <button onClick={() => navigate("/panel")}>Inicio</button>
         <button onClick={() => navigate("/productos")}>Productos</button>
-        <button onClick={() => alert("Carrito próximamente")}>Carrito</button>
+        <button onClick={() => navigate("/Carrito")}>Carrito</button>
         <button onClick={() => navigate("/cotizaciones")}>Cotizaciones</button>
       </nav>
 
