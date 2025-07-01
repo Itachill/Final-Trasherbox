@@ -1,0 +1,74 @@
+.cotizacion-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cotizacion-form .form-group {
+  margin-bottom: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cotizacion-form label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.cotizacion-form input,
+.cotizacion-form select,
+.cotizacion-form textarea {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.cotizacion-form input:focus,
+.cotizacion-form select:focus,
+.cotizacion-form textarea:focus {
+  border-color: #e76f1d;
+}
+
+.cotizacion-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Fila con campos múltiples como largo, ancho y alto */
+.cotizacion-form .form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.4rem; /* 👉 Espacio entre esta fila y el siguiente bloque */
+}
+
+.cotizacion-form .form-row .form-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.cotizacion-form button {
+  background-color: #e76f1d;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.cotizacion-form button:hover {
+  background-color: #cc5a11;
+}

@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e76f1d;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
+  margin: 0 1rem;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.logout-button,
+.login-button {
+  background-color: #e76f1d;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav button {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .logout-button,
+  .login-button {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+}
